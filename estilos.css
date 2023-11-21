@@ -1,0 +1,264 @@
+@font-face {
+    font-family: 'Freight Sans Black SC';
+    src: url('fonts/Freight Sans Black SC.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    font-family: 'Freight Sans Black SC', Arial, sans-serif;
+}
+
+.bgone {
+    background-color: #DDF3FE;
+}
+
+/*Header*/
+header {
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#logo {
+    text-align: left;
+    font-weight: bold;
+}
+
+#navigation {
+    text-align: center;
+}
+
+#navigation a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+#login {
+    text-align: right;
+}
+
+#joinUs {
+    margin-left: 10px;
+    background-color: #E5B67A;
+    border: 0;
+    width: 80px;
+    height: 25px;
+    color: white;
+    border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+    #navigation {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    #login {
+        text-align: left;
+        margin-top: 10px;
+    }
+}
+
+/*1er Contenido*/
+#contentContainer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#leftContent {
+    width: 50%;
+    text-align: left;
+}
+
+#leftContent p {
+    margin-bottom: 10px;
+}
+
+#leftContent .brownText {
+    color: #8B4513;
+    font-weight: bold;
+}
+
+#leftContent .blackText {
+    color: #000000;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#leftContent .normalText {
+    color: #000000;
+    font-weight: normal;
+}
+
+#leftContent .orangeButton {
+    background-color: #E5B67A;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    width: 80px;
+    height: 35px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+#leftContent .borderedButton {
+    background-color: transparent;
+    border: 2px solid #E5B67A;
+    border-radius: 5px;
+    color: #E5B67A;
+    width: 80px;
+    height: 37px;
+    font-size: 14px;
+}
+
+#rightContent {
+    width: 50%;
+    text-align: right;
+}
+
+#rightContent img {
+    width: 50%;
+    border-radius: 5px;
+    opacity: 70%;
+}
+
+#rightContent img:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+}
+
+/*Estadisticas*/
+#statsContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.statBox {
+    text-align: center;
+}
+
+.largeText {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.normalText {
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/*Atencion de calidad*/
+#adviceContainer {
+    text-align: left;
+    padding: 20px;
+}
+
+.adviceText {
+    color: #E5B67A;
+    font-size: 1em;
+}
+
+.adviceTextLarge {
+    font-size: 3.2em;
+    font-weight: bold;
+}
+
+.normalText {
+    font-size: 1em;
+}
+
+/*Targets*/
+#targetsContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.target {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.target:hover {
+    transform: scale(1.03);
+}
+
+.targetImage {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.targetTitle {
+    font-size: 1.2em;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.separatorLine {
+    width: 50%;
+    height: 2px;
+    background-color: #E5B67A;
+    margin: 10px auto;
+}
+
+.targetDescription {
+    font-size: 0.9em;
+}
+
+.target::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+    pointer-events: none;
+}
+
+/*About*/
+#AboutContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+#companyInfoContainer,
+#legalContainer,
+#featuresContainer,
+#resourcesContainer,
+#getInTouchContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+.sectionTitle {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.iconImage {
+    max-width: 100%;
+    height: auto;
+    margin-right: 5px;
+}
